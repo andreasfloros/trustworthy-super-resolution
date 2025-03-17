@@ -68,7 +68,7 @@ def main(checkpoint_path: str,
 
         hrs = (hrs + 1) / 2
 
-        psnr += th.sum(th.log((srs - hrs).pow(2).mean(dim=[1, 2, 3]))) / len(dataset)
+        psnr -= 10 * th.sum(th.log((srs - hrs).pow(2).mean(dim=[1, 2, 3]))) / len(dataset)
         consistency += th.sum((slrs - lrs).pow(2).mean(dim=[1, 2, 3])) / len(dataset)
 
     print(f"Consistency (x1e-5): {consistency.item() * 1e5:.9f}, PSNR: {psnr.item():.9f} dB, \
