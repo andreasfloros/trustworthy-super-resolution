@@ -16,7 +16,7 @@ We consider the problem of trustworthy image restoration, taking the form of a c
         <img src="assets/sr.png" />
       </td>
       <td align="center">
-        <b>Original</b><br>
+        <b>High-resolution</b><br>
         <img src="assets/hr.png" />
       </td>
     </tr>
