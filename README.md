@@ -41,7 +41,7 @@ We consider the problem of trustworthy image restoration, taking the form of a c
   floros2025trustworthy,
   title={{Trustworthy Image Super-Resolution via Generative Pseudoinverse}},
   author={Andreas Floros and Seyed-Mohsen Moosavi-Dezfooli and Pier Luigi Dragotti},
-  booktitle={ICLR 2025 Workshop on Deep Generative Model in Machine Learning: Theory, Principle and Efficacy},
+  booktitle={ICLR 2025 Workshop on Deep Generative Models in Machine Learning: Theory, Principle and Efficacy},
   year={2025},
   url={https://openreview.net/forum?id=UsYosqkokz}
 }
