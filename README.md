@@ -4,6 +4,25 @@ Andreas Floros, Seyed-Mohsen Moosavi-Dezfooli, Pier Luigi Dragotti
 ## Abstract
 We consider the problem of trustworthy image restoration, taking the form of a constrained optimization over the prior density. To this end, we develop generative models for the task of image super-resolution that respect the degradation process and that can be made asymptotically consistent with the low-resolution measurements, outperforming existing methods by a large margin in that respect.
 
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <b>Low-resolution</b><br>
+        <img src="assets/lr.png" />
+      </td>
+      <td align="center">
+        <b>Super-resolved</b><br>
+        <img src="assets/sr.png" />
+      </td>
+      <td align="center">
+        <b>Original</b><br>
+        <img src="assets/hr.png" />
+      </td>
+    </tr>
+  </table>
+</div>
+
 ## Setup
 ### Requirements
 - [PyTorch](https://pytorch.org/get-started/locally/)
