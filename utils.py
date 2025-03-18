@@ -111,15 +111,6 @@ def ihaar2d(coarse: th.Tensor, details: th.Tensor) -> th.Tensor:
                           coarse - d1 - d2 + d3), dim=1))
 
 
-def mm_normalize(x: th.Tensor) -> th.Tensor:
-    """
-    Min-max normalize a tensor.
-    """
-
-    mn = x.min()
-    return (x - mn) / (x.max() - mn)
-
-
 def modcrop(x: th.Tensor, scale: int) -> th.Tensor:
     """
     Crop the input image dimensions to be a multiple of the scale.
