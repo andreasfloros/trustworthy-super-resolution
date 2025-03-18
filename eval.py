@@ -64,7 +64,6 @@ def main(checkpoint_path: str,
 
         lrs = (lrs + 1) / 2
         slrs = utils.bicubic_down_sx(srs, s=scale)
-        slrs = (slrs + 1) / 2
 
         hrs = (hrs + 1) / 2
 
