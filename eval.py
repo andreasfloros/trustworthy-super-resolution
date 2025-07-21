@@ -13,7 +13,7 @@ def main(checkpoint_path: str,
          config_path: str,
          in_path: str,
          batch_size: int,
-         use_ema: bool,
+         ema: bool,
          eta: float,
          steps: Optional[int],
          seed: Optional[int]) -> None:
@@ -32,7 +32,7 @@ def main(checkpoint_path: str,
     model.flow = modules.DegradationFlow(num_channels=num_channels,
                                          transform_cfg=transform_cfg,
                                          scale=scale).eval().to(device)
-    if use_ema:
+    if ema:
         ema = th.optim.swa_utils.AveragedModel(model,
                                                multi_avg_fn=th.optim.swa_utils.get_ema_multi_avg_fn(
                                                    config["ema_decay"]))
